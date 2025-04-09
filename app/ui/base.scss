@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li {
+  font-size: inherit;
+  font-weight: 400;
+  color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#root {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #BFCBDA;
+  border-radius: 22px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0C1D36;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 22px;
+}
+
+body {
+  font-family: "Rubik", serif;
+  background-color: #0F172A;
+  padding: 0 24px;
+}
+
+body:has(.popup), body:has(.menuActive) {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #BFCBDA;
+    border-radius: 22px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #0C1D36;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 22px;
+  }
+}
+
+.errorMsg {
+  color: #F17C7C;
+  margin-top: 4px;
+  padding-left: 8px;
+}
